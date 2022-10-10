@@ -41,8 +41,7 @@ fun main() {
     println("Cellphone: $cellPhone")
     println("Email address: $emailAddress")
     println("Social security number: $socialSecurityNUmber")
-    println("Are you a U.S citizen? $isUsCitizen" +
-            "")
+    println("Are you a U.S citizen? $isUsCitizen")
     println("Have you ever been convicted of a felony? $hasBeenConvicted")
     println("If selected for employment are you willing to submit pre-employment drug screening test? $haveDrugScreenTest")
 
