@@ -10,7 +10,6 @@ fun main() {
     var workStartDate = LocalDate.parse("2022-10-30")
     var dateFormat = DateTimeFormatter.ofPattern("mm-dd-yyyy")
     var formattedWorkStartDate = workStartDate.format(dateFormat)
-
     var lastName = " "
     var firstName =" "
     var middle = " "
