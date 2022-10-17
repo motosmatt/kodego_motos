@@ -47,11 +47,15 @@ fun main() {
     }
     logger.info { "Divide the value by how many?: " }
     var divideTheValue = readln().toIntOrNull()
-    if (divideTheValue == null){
+    if (divideTheValue == null) {
         do {
-            logger.error{"It will only accept an Integer as input"}
+            logger.error { "It will only accept an Integer as input" }
             divideTheValue = readln().toIntOrNull()
-        }  while (divideTheValue == null)
+        } while (divideTheValue == null)
+
+
     }
+    var answer = (amount1 + amount2 + amount3 + amount4 +amount5) / divideTheValue
+    logger.info {"Answer: $answer"}
 
 }
