@@ -7,6 +7,7 @@ private val logger = KotlinLogging.logger{}
 fun main(args: Array<String>) {
         var str = "GIRAFARIG"
         var str2 = "Kayak"
+        var str3 = "GATE"
         var reverseStr = ""
         var num = 202
         var reversedNum = 0
@@ -20,6 +21,7 @@ fun main(args: Array<String>) {
         }
         if (str.lowercase() == reverseStr.lowercase()) {
             logger.info{("$str is a Palindrome.")}
+            var str = readln()
         } else {
             logger.info{("$str is not a Palindrome.")}
         }
@@ -42,6 +44,14 @@ fun main(args: Array<String>) {
        logger.info { ("$originalNum is Palindrome.") }
     } else {
         logger.info{("$originalNum is not Palindrome.")}
+    }
+    for (i in strLength - 1 downTo 0) {
+        reverseStr = reverseStr + str[i]
+    }
+    if (str.lowercase() == reverseStr.lowercase()) {
+        logger.info{("$str3 is a Palindrome.")}
+    } else {
+        logger.info{("$str3 is not a Palindrome.")}
     }
 
     }

@@ -5,8 +5,8 @@ private val logger =KotlinLogging.logger{}
 fun main(args: Array<String>) {
 
 
-    var i: Int
-    var j: Int
+    var int1: Int
+    var int2: Int
     var flag: Int
 
     logger.info{("Enter first number: ")}
@@ -21,45 +21,45 @@ fun main(args: Array<String>) {
         logger.info{  "$b"}
     }
 
-    i = 1
-    while (i <= a) {
+    int1 = 1
+    while (int1 <= a) {
 
-        if (i == 1 || i == 0) {
-            i++
+        if (int1 == 1 || int1 == 0) {
+            int1++
             continue
         }
 
         flag = 1
-        j = 2
-        while (j <= i / 2) {
-            if (i % j == 0) {
+        int2 = 2
+        while (int2 <= int1 / 2) {
+            if (int1 % int2 == 0) {
                 flag = 0
                 break
             }
-            ++j
+            ++int2
         }
-        if (flag == 1) logger.info{(i)}
-        i++
+        if (flag == 1) logger.info{(int1)}
+        int1++
     }
-    i = 1
-    while (i <= b) {
+    int1= 1
+    while (int1 <= b) {
 
-        if (i == 1 || i == 0) {
-            i++
+        if (int1 == 1 || int1 == 0) {
+            int1++
             continue
         }
 
         flag = 1
-        j = 2
-        while (j <= i / 2) {
-            if (i % j == 0) {
+        int2 = 2
+        while (int2 <= int1 / 2) {
+            if (int1 % int2 == 0) {
                 flag = 0
                 break
             }
-            ++j
+            ++int2
         }
         if (flag == 1)
-            logger.info{(i)}
-        i++
+            logger.info{(int1)}
+        int1++
     }
 }
